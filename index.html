@@ -1,2 +1,219 @@
-malk rgoba ya kaleb
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nour Al-Nawar</title>
+    <link rel="icon" href="./img/icon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .lang-en { display: none; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    
+    <header class="bg-white border-b border-gray-300 relative">
+        <div class="flex flex-col items-center p-4 text-center">
+            <div class="mb-2">
+                <img class="h-24 mx-auto" src="./img/logo.png" alt="Nour Al-Nawar Logo">
+            </div>
 
+            <button id="language-toggle" class="text-gray-700 mb-2 text-lg p-2 rounded hover:bg-gray-100">
+                تغيير اللغة
+            </button>
+
+            <div class="w-full flex justify-center md:hidden">
+                <button id="menu-icon" class="text-gray-700 mb-2 text-2xl p-2 rounded hover:bg-gray-100">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="w-full hidden md:block">
+                <ul class="flex flex-row justify-center space-x-8">
+                    <li><a class="text-gray-700 hover:text-blue-900" href="#contact"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+                    <li><a class="text-gray-700 hover:text-blue-900" href="#products"><i class="fas fa-list"></i> المنتجات</a></li>
+                    <li><a class="text-gray-700 hover:text-blue-900" href="#about"><i class="fas fa-info-circle"></i> نبذة عنا</a></li>
+                    <li><a class="text-gray-700 hover:text-blue-900" href="#home"><i class="fas fa-home"></i> الرئيسية</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-300 absolute top-full left-0 w-full z-[101]">
+            <nav class="p-4">
+                <ul class="flex flex-col items-center space-y-2">
+                    <li><a class="text-gray-700 hover:text-blue-900" href="#home"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a class="text-gray-700 hover:text-blue-900" href="#about"><i class="fas fa-info-circle"></i> نبذة عنا</a></li>
+                    <li><a class="text-gray-700 hover:text-blue-900" href="#products"><i class="fas fa-list"></i> المنتجات</a></li>
+                    <li><a class="text-gray-700 hover:text-blue-900" href="#contact"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <hr>
+
+    <section id="home" class="home-section">
+        <div class="gradient-overlay"></div>
+        <div class="relative w-full h-full"> 
+            <img src="./img/p1.jpeg" class="fade" id="backgroundImage" alt="Background Image">
+            <img src="./img/p2.jpg" class="fade" alt="Background Image 2">
+            <img src="./img/p3.jpg" class="fade" alt="Background Image 3">
+        </div>
+        <div class="text-overlay">
+          <h1 class="lang-ar">مرحبًا بكم في الموقع الرسمي لي شركة نور النوار</h1>
+          <h1 class="lang-en">Welcome to the official website of Nour Al-Nawar</h1>
+            <p class="lang-ar">تجربة فريدة من نوعها تقدم لكم أفضل الملابس والمصنوعات الجلدية</p>
+            <p class="lang-en">A unique experience offering you the best clothing and leather goods</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="about" class="about-section bg-gray-200">
+        <div class="about-info">
+            <h2 class="text-3xl font-bold text-blue-900 lang-ar">نبذة عنا</h2>
+            <h2 class="text-3xl font-bold text-blue-900 lang-en">About Us</h2>
+            <p class="mt-4 text-gray-700 leading-relaxed lang-ar">
+                شركة نور النوار متميزة في توفير أفضل الملابس والمصنوعات الجلدية. نحن نركز على الجودة والتميز في منتجاتنا.
+            </p>
+            <p class="mt-4 text-gray-700 leading-relaxed lang-en">
+                Nour Al-Nawar is distinguished in providing the best clothing and leather goods. We focus on quality and excellence in our products.
+            </p>
+            <ul class="mt-4 space-y-3 list-disc pr-5 text-gray-800 lang-ar">
+               <li>
+                    <span class="font-bold text-lg text-blue-900">جودة راقية:</span>
+                    نحرص في شركة نور النوار على اختيار أفضل الأقمشة والجلود الطبيعية لضمان منتجات تدوم طويلاً.
+                </li>
+               <li>
+                    <span class="font-bold text-lg text-blue-900">تصاميم عصرية:</span>
+                    نقدم تشكيلة متميزة من الملابس والمصنوعات الجلدية.
+                </li>
+               <li>
+                    <span class="font-bold text-lg text-blue-900">تميز في التفاصيل:</span>
+                    نهتم بأدق التفاصيل.
+                </li>
+            </ul>
+            <ul class="mt-4 space-y-3 list-disc pr-5 text-gray-800 lang-en">
+               <li>
+                    <span class="font-bold text-lg text-blue-900">High Quality:</span>
+                    We carefully select the best fabrics and natural leathers to ensure durable products.
+                </li>
+               <li>
+                    <span class="font-bold text-lg text-blue-900">Modern Designs:</span>
+                    We offer a unique collection of clothing and leather goods.
+                </li>
+               <li>
+                    <span class="font-bold text-lg text-blue-900">Attention to Details:</span>
+                    We focus on the finest details.
+                </li>
+            </ul>
+        </div>
+        <div class="about-image">
+            <div class="image-grid grid grid-cols-1 md:grid-cols-2 gap-3">
+                <img src="./img/about.webp" alt="About Us Image 1">
+                <img src="./img/about_2.webp" alt="About Us Image 2">
+                <img src="./img/about_3.jpg" alt="About Us Image 3">
+                <img src="./img/about_4.jpg" alt="About Us Image 4">
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="products" class="products-section">
+        <h2 class="text-3xl font-bold text-center mb-8 lang-ar">منتجاتنا</h2>
+        <h2 class="text-3xl font-bold text-center mb-8 lang-en">Our Products</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="product-card p-4">
+                <div class="product-image">
+                    <img src="./img/clothes.jpg" alt="Clothing">
+                </div>
+                <div class="product-title lang-ar">الملابس</div>
+                <div class="product-title lang-en">Clothing</div>
+                <div class="product-caption lang-ar">تشكيلة متنوعة من الملابس العصرية المصنوعة بجودة عالية.</div>
+                <div class="product-caption lang-en">A variety of high-quality modern clothing.</div>
+                <div class="text-blue-900">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+            </div>
+
+            <div class="product-card p-4">
+                <div class="product-image">
+                    <img src="./img/shoes.jpg" alt="Shoes">
+                </div>
+                <div class="product-title lang-ar">الأحذية</div>
+                <div class="product-title lang-en">Shoes</div>
+                <div class="product-caption lang-ar">أحذية أنيقة ومريحة.</div>
+                <div class="product-caption lang-en">Elegant and comfortable shoes.</div>
+                <div class="text-gray-800">
+                    <i class="fas fa-shoe-prints"></i>
+                </div>
+            </div>
+
+            <div class="product-card p-4">
+                <div class="product-image">
+                    <img src="./img/bag.jpg" alt="Bags">
+                </div>
+                <div class="product-title lang-ar">الحقائب</div>
+                <div class="product-title lang-en">Bags</div>
+                <div class="product-caption lang-ar">حقائب جلدية وعملية بتصاميم راقية.</div>
+                <div class="product-caption lang-en">Leather bags with elegant designs.</div>
+                <div class="text-amber-800">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact" class="contact-section">
+        <h2 class="text-3xl font-bold text-center mb-8 lang-ar">تواصل معنا</h2>
+        <h2 class="text-3xl font-bold text-center mb-8 lang-en">Contact Us</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="contact-card">
+                <i class="contact-icon fas fa-phone"></i>
+                <h3 class="mt-2 lang-ar">الهاتف</h3>
+                <h3 class="mt-2 lang-en">Phone</h3>
+                <p>+218-912-155-998</p>
+            </div>
+            <div class="contact-card">
+                <i class="contact-icon fas fa-envelope"></i>
+                <h3 class="mt-2 lang-ar">البريد الإلكتروني</h3>
+                <h3 class="mt-2 lang-en">Email</h3>
+                <p>info@nour.alnawar.ly</p>
+            </div>
+            <div class="contact-card">
+                <i class="contact-icon fas fa-map-marker-alt"></i>
+                <h3 class="mt-2 lang-ar">العنوان</h3>
+                <h3 class="mt-2 lang-en">Address</h3>
+                <p>طرابلس, ليبيا</p>
+            </div>
+            <div class="contact-card">
+                <a href="#" class="block">
+                    <i class="contact-icon fab fa-facebook"></i>
+                    <h3 class="mt-2 lang-ar">صفحة الفيسبوك</h3>
+                    <h3 class="mt-2 lang-en">Facebook Page</h3>
+                    <p class="text-blue-600 hover:text-blue-500">متابعة الآن</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <h3 class="text-lg font-bold mb-2 text-center lang-ar">موقعنا</h3>
+            <h3 class="text-lg font-bold mb-2 text-center lang-en">Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26804.608249004614!2d13.2089354487889!3d32.882935211618474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a892c4c11c43d9%3A0x8d99d8947b5cec86!2z2LfYsdin2KjZhNiz!5e0!3m2!1sar!2sly!4v1765825673061!5m2!1sar!2sly" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" defer></script>
+    <footer class="footer bg-gray-800 text-white mt-10">
+        <div class="container mx-auto p-4">
+            <p class="mb-2">© 2025 Nour Al-Nawar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
